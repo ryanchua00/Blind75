@@ -6,12 +6,14 @@ class Solution:
         # rob current house and skip prev, but get all after that 
         # skip current, get all after
         if len(nums) == 0: return 0
-        mem = [0,0]
+        prev1 = 0 # represents the prev house 
+        prev2 = 0 # represents prev 2 houses 
         for num in nums:
-            tmp = mem[0]
-            mem[0] = max(mem[1] + num, mem[0])
-            mem[1] = tmp
-        return mem[0]
+            print(prev1, prev2) 
+            tmp = prev1
+            prev1 = max(prev2 + num, prev1)
+            prev2 = tmp
+        return prev1
     
 # [4,4]
 #  
@@ -19,9 +21,9 @@ class Solution:
 #       ^
 
 
-print(Solution().rob([1,2,3,1]))
+# print(Solution().rob([1,2,3,1]))
 print(Solution().rob([2,7,9,3,1]))
-print(Solution().rob([2,1,1,2]))
+# print(Solution().rob([2,1,1,2]))
 # missCost D = C,E   
 # A = [A, B, C, D, E]
 #      ^  X 

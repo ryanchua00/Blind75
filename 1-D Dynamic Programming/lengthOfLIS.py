@@ -11,7 +11,7 @@ class Solution:
         for i in range(len(nums), -1, -1):
             for j in range(i + 1, len(nums)):
                 if nums[i] < nums[j]:
-                    nums[i] = max(nums[i], nums[j] + 1)
+                    LIS[i] = max(LIS[i], LIS[j] + 1)
 
 
         return max(LIS)

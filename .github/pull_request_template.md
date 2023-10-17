@@ -4,22 +4,23 @@
 ## Checklist
 
 General
-- [ ] tested potentially affected functionalities locally
-- [ ] live demoed to reviewer
-- [ ] used environment variable for configurations that can not be exposed or needs value adjustment later
-- [ ] if any, named new environment variable with its function group in front: e.g. CARBONNEWS_xxx
-- [ ] reused components instead of creating a new one. Even if the old component is not designed for new function purpose, it is refactored/generalised instead of reinventing the wheel
+- [ ] Tested potentially affected functionalities locally
+- [ ] Live demoed to reviewer
+- [ ] If any, used environment variables for configurations that can't be exposed or needs value adjustment later
+- [ ] If any, named new environment variables with its function group in front: e.g. CARBONNEWS_xxx
+- [ ] If any, reused components instead of creating new ones. Even if the old component is not designed for new function purpose, it is refactored/generalised instead of reinventing the wheel.
 
 Frontend:
-- [ ] tailwindCSS is used wherever possible
+- [ ] If any, tailwindCSS is used wherever possible
+- [ ] If any, existing file and variable naming conventions are used.
 
 Backend:
-- [ ] unnecessarily complicated logic is avoided by using simpler logic
-- [ ] debug tracing is added for using AWS x-ray service
+- [ ] Avoided unnecessarily complicated logic by using simpler logic
+- [ ] Debug tracing is added for using AWS x-ray service
 
 Database:
-- [ ] have minimised the to and fro with database to a single transaction per function call
-- [ ] when using SQL raw query, only retrieving the columns you need
+- [ ] If any, have minimised the to and fro with database to a single transaction per function call
+- [ ] If any, when using SQL raw query, only retrieving the columns you need
 
 ## Screenshots (if applicable)
 

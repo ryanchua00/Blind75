@@ -11,7 +11,6 @@ class Solution:
 
         for item in seen:
             if item in iter(charMap.keys()):
-                print(charMap)
                 charMap.pop(item)
 
         if len(charMap)> 0:
